@@ -63,12 +63,19 @@ export default function Footer() {
           <p className="text-xs text-gray-500">
             Website powered by{' '}
             <a 
-              href="https://masaquantum.net" 
+              href="https://nexaquantum.net" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-[#b88b5f] hover:text-[#d4a574] transition-colors font-medium"
             >
-              MasaQuantum
+              NexaQuantum LLC
+            </a>
+            {' '}|{' '}
+            <a 
+              href="mailto:info@nexaquantum.net"
+              className="text-[#b88b5f] hover:text-[#d4a574] transition-colors"
+            >
+              info@nexaquantum.net
             </a>
           </p>
         </div>

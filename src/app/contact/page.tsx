@@ -91,7 +91,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-medium text-gray-900 mb-1">Location</h3>
-                    <p className="text-gray-600">[Your City, State]</p>
+                    <p className="text-gray-600">Orlando, Florida</p>
                   </div>
                 </div>
               </div>

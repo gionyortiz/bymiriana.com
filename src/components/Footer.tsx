@@ -56,8 +56,21 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-[#d4a574]/30 text-center text-sm text-gray-600">
-          © {currentYear} byMiriana. All rights reserved.
+        <div className="mt-8 pt-8 border-t border-[#d4a574]/30 text-center">
+          <p className="text-sm text-gray-600 mb-2">
+            © {currentYear} byMiriana. All rights reserved.
+          </p>
+          <p className="text-xs text-gray-500">
+            Website powered by{' '}
+            <a 
+              href="https://masaquantum.net" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-[#b88b5f] hover:text-[#d4a574] transition-colors font-medium"
+            >
+              MasaQuantum
+            </a>
+          </p>
         </div>
       </div>
     </footer>

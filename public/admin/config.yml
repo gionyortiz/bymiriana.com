@@ -1,0 +1,19 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/photos"
+public_folder: "/photos"
+
+collections:
+  - name: "photos"
+    label: "Photos"
+    folder: "src/data/gallery"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Photo", name: "image", widget: "image"}
+      - {label: "Title", name: "title", widget: "string", required: false}
+      - {label: "Date Taken", name: "date", widget: "datetime"}
+      - {label: "Category", name: "category", widget: "select", options: ["nature", "light", "streets", "details", "seasons", "memories"], required: false}
+      - {label: "Description", name: "description", widget: "text", required: false}

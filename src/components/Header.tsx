@@ -16,9 +16,9 @@ export default function Header() {
             <Image 
               src="/logo.png" 
               alt="byMiriana Photography" 
-              width={160} 
-              height={50}
-              className="h-12 w-auto"
+              width={240} 
+              height={75}
+              className="h-16 w-auto md:h-20"
               priority
             />
           </Link>

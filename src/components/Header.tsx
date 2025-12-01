@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 
 export default function Header() {
@@ -11,8 +12,15 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="text-2xl font-light tracking-tight text-gray-900 hover:text-[#b88b5f] transition-colors">
-            by<span className="font-medium text-[#d4a574]">Miriana</span>
+          <Link href="/" className="hover:opacity-80 transition-opacity">
+            <Image 
+              src="/logo.png" 
+              alt="byMiriana Photography" 
+              width={160} 
+              height={50}
+              className="h-12 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}

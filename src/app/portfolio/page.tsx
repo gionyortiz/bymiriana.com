@@ -1,14 +1,24 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
-import type { Metadata } from 'next';
+import { useState } from 'react';
 import { photos, formatPhotoDate } from '@/data/photos';
-
-export const metadata: Metadata = {
-  title: 'Portfolio - byMiriana',
-  description: 'Browse through my photography collections featuring portraits, weddings, events, and more.',
-};
+import Lightbox from '@/components/Lightbox';
 
 export default function Portfolio() {
+  const [selectedPhoto, setSelectedPhoto] = useState<string | null>(null);
+  const [selectedAlt, setSelectedAlt] = useState<string>('');
+
+  const handlePhotoClick = (filename: string, alt: string) => {
+    setSelectedPhoto(filename);
+    setSelectedAlt(alt);
+  };
+
+  const handleClose = () => {
+    setSelectedPhoto(null);
+    setSelectedAlt('');
+  };
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
@@ -30,7 +40,8 @@ export default function Portfolio() {
             {photos.map((photo, index) => (
               <div 
                 key={photo.filename}
-                className="group relative aspect-[3/4] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all"
+                className="group relative aspect-[3/4] bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all cursor-pointer"
+                onClick={() => handlePhotoClick(photo.filename, photo.title || `Photography by Miriana - ${formatPhotoDate(photo.date)}`)}
               >
                 <Image
                   src={`/photos/${photo.filename}`}
@@ -53,6 +64,14 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
+
+      {/* Lightbox */}
+      <Lightbox 
+        src={selectedPhoto ? `/photos/${selectedPhoto}` : ''}
+        alt={selectedAlt}
+        isOpen={!!selectedPhoto}
+        onClose={handleClose}
+      />
 
       {/* Call to Action */}
       <section className="py-20 bg-gradient-to-b from-white to-[#faf7f4]">

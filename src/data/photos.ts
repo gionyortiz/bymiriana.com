@@ -28,6 +28,8 @@ export const photos: Photo[] = [
   { filename: 'a9d736e7-a87e-4392-84d5-1ca6e21aed64.JPG', date: '2025-12-01' },
   { filename: 'c7de4039-510d-4339-a441-2ef0d82701e9.JPG', date: '2025-12-01' },
   { filename: 'ec5a9b70-39f3-49e8-b1ac-92abd325c6b1.JPG', date: '2025-12-01' },
+  { filename: 'photo17.JPG', date: '2025-12-01' },
+  { filename: 'photo18.JPG', date: '2025-12-01' },
 ];
 
 // Helper function to format dates nicely

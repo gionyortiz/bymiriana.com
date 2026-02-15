@@ -30,6 +30,15 @@ export const photos: Photo[] = [
   { filename: 'ec5a9b70-39f3-49e8-b1ac-92abd325c6b1.JPG', date: '2025-12-01' },
   { filename: 'photo17.JPG', date: '2025-12-01' },
   { filename: 'photo18.JPG', date: '2025-12-01' },
+
+  { filename: 'IMG-20260109-WA0004.jpg', date: '2026-01-09' },
+  { filename: 'IMG-20260109-WA0005.jpg', date: '2026-01-09' },
+  { filename: 'IMG-20260112-WA0001.jpg', date: '2026-01-12' },
+  { filename: 'IMG-20260112-WA0002.jpg', date: '2026-01-12' },
+  { filename: 'IMG-20260112-WA0003.jpg', date: '2026-01-12' },
+  { filename: 'IMG-20260112-WA0004.jpg', date: '2026-01-12' },
+  { filename: 'IMG-20260112-WA0006.jpg', date: '2026-01-12' },
+  { filename: 'IMG-20260206-WA0000(1).jpg', date: '2026-02-06' },
 ];
 
 // Helper function to format dates nicely

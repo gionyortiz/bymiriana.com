@@ -1,6 +1,14 @@
 {
   "version": 2,
   "cleanUrls": true,
+  "rewrites": [
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/about/", "destination": "/about.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/contact/", "destination": "/contact.html" },
+    { "source": "/portfolio", "destination": "/portfolio.html" },
+    { "source": "/portfolio/", "destination": "/portfolio.html" }
+  ],
   "builds": [
     {
       "src": "package.json",

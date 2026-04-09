@@ -2,11 +2,13 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #1a1a1a;
-  --primary: #d4a574;
-  --primary-dark: #b88b5f;
+  --foreground: #0f0f0f;
+  --primary: #c9956a;
+  --primary-dark: #a87a52;
   --secondary: #8b9dc3;
-  --accent: #e8d5c4;
+  --accent: #f5f0eb;
+  --dark: #0f0f0f;
+  --dark-alt: #1a1a1a;
 }
 
 @theme inline {
@@ -16,6 +18,7 @@
   --color-primary-dark: var(--primary-dark);
   --color-secondary: var(--secondary);
   --color-accent: var(--accent);
+  --color-dark: var(--dark);
   --font-sans: var(--font-inter);
   --font-serif: var(--font-playfair);
 }
@@ -31,14 +34,20 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Add top padding for fixed header */
+/* Add top padding for fixed header — h-16 mobile, h-20 desktop */
 main {
   padding-top: 4rem;
 }
 
-/* Gradient backgrounds */
+@media (min-width: 768px) {
+  main {
+    padding-top: 5rem;
+  }
+}
+
+/* ── Legacy utility classes (kept for compatibility) ── */
 .gradient-warm {
-  background: linear-gradient(135deg, #f5e6d3 0%, #d4a574 100%);
+  background: linear-gradient(135deg, #f5e6d3 0%, #c9956a 100%);
 }
 
 .gradient-cool {
@@ -46,5 +55,27 @@ main {
 }
 
 .gradient-soft {
-  background: linear-gradient(135deg, #faf7f4 0%, #e8d5c4 50%, #d4a574 100%);
+  background: linear-gradient(135deg, #f8f5f1 0%, #ede6dc 50%, #c9956a 100%);
+}
+
+/* ── Studio utilities ── */
+.studio-eyebrow {
+  font-size: 0.65rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.studio-heading {
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  color: var(--dark);
+}
+
+/* Image hover zoom */
+.img-zoom img {
+  transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.img-zoom:hover img {
+  transform: scale(1.06);
 }

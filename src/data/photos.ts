@@ -11,7 +11,15 @@ export interface Photo {
 export const photos: Photo[] = [
   // Add your photos here - just copy/paste this format:
   // { filename: 'photo-name.JPG', date: '2025-12-01', title: 'Beautiful Sunset', category: 'nature' },
-  
+
+  { filename: '19.jpg', date: '2026-04-09' },
+  { filename: '20.JPG', date: '2026-04-09' },
+  { filename: '21.JPG', date: '2026-04-09' },
+  { filename: '22.jpg', date: '2026-04-09' },
+  { filename: '23.jpeg', date: '2026-04-09' },
+  { filename: '24.jpg', date: '2026-04-09' },
+  { filename: '25.jpg', date: '2026-04-09' },
+
   { filename: '05675462-881d-496f-b01b-bb8705cfb66a.JPG', date: '2025-12-01' },
   { filename: '38ee7e07-c139-482f-98fc-256e5994317c.JPG', date: '2025-12-01' },
   { filename: '3d142ea6-86ba-4a7e-939a-9df1ada3593c.JPG', date: '2025-12-01' },

@@ -38,7 +38,7 @@ export default function Portfolio() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
-            {photos.map((photo, index) => (
+            {photos.map((photo) => (
               <div
                 key={photo.filename}
                 className="group relative aspect-[3/4] bg-[#f0ebe4] overflow-hidden cursor-pointer img-zoom"

@@ -15,7 +15,6 @@ export const photos: Photo[] = [
   { filename: '19.jpg', date: '2026-04-09' },
   { filename: '20.JPG', date: '2026-04-09' },
   { filename: '21.JPG', date: '2026-04-09' },
-  { filename: '23.jpeg', date: '2026-04-09' },
   { filename: '24.jpg', date: '2026-04-09' },
   { filename: '25.jpg', date: '2026-04-09' },
 

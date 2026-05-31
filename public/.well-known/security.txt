@@ -1,0 +1,6 @@
+Contact: mailto:contact@bymiriana.com
+Expires: 2027-05-31T23:59:59Z
+Preferred-Languages: en, es
+Canonical: https://gionyortiz.github.io/bymiriana.com/.well-known/security.txt
+Policy: https://github.com/gionyortiz/bymiriana.com/security/policy
+Acknowledgments: https://github.com/gionyortiz/bymiriana.com
